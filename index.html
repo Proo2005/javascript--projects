@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STONE PAPER SCISSOR</title>
+</head>
+<style>
+   div.v{font-weight:bold;display: flex;flex-direction: column;}
+  .choises,.result{display:flex;flex-direction: row;gap: 25px;color:white;}
+  .container{width:300px;height:200px;background:rgb(6, 6, 102);justify-items:center;align-content:center;resize: both;overflow: auto;border-radius: 5px;margin:auto;}
+  .choise{width:80px;height:80px;border-radius:50%;}
+  .you,.comp{font-size: clamp(1rem, 1.5vw, 2.5rem);}
+  .choise{background:blue;}
+  .choise:hover{background:blue;box-shadow: 3px 3px 5px 5px rgb(0, 0, 188) inset;border:1rem rgb(80, 80, 249);}
+</style>
+<body>
+  <div class="container">
+    <div class="choises">
+    <button class="choise">stone</button>
+    <button class="choise">paper</button>
+    <button class="choise">scissor</button>
+  </div>
+  <div class="result">
+    <p class="you">YOUR SCORE :</p>
+    <p class="comp">COMP SCORE :</p>
+  </div>
+  </div>
+  <div class="v">
+  <p class="m">your choice:</p>
+  <p class="c">computer chose:</p>
+  </div>
+
+  
+  <script src="sps.js"></script>
+</body>
+</html>
