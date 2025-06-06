@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+
+    }
+
+    .box {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .display {
+      width: 100%;
+      height: 60px;
+      font-size: 24px;
+      text-align: right;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      background: #2e2e2e;
+      color: #fff;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .buttons>div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .button {
+      flex: 1;
+      padding: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #3b3b3b;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #555;
+    }
+
+    .button:active {
+      background: #777;
+    }
+
+    /* Special styles for operators */
+    .button.operator {
+      background: #ff9500;
+    }
+
+    .button.operator:hover {
+      background: #ffa733;
+    }
+
+    .button.equals {
+      background: #34c759;
+    }
+
+    .button.equals:hover {
+      background: #4cd964;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <input type="text" class="display" placeholder="0" readonly />
+    <div class="buttons">
+      <div class="sec0">
+        <button class="button">CE</button>
+        <button class="button">&#x232B;</button> <!-- Backspace symbol -->
+        <button class="button operator">+</button>
+      </div>
+      <div class="sec1">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operator">-</button>
+      </div>
+      <div class="sec2">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operator">*</button>
+      </div>
+      <div class="sec3">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operator">/</button>
+      </div>
+      <div class="sec4">
+        <button class="button">0</button>
+        <button class="button">00</button>
+        <button class="button">.</button>
+        <button class="button equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cal.js">
+    
+
+
+  </script>
+</body>
+
+</html>
